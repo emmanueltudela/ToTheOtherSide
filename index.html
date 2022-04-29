@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+	<img src="src/img/logo.png" class="image_title">
+	<div id="earth">
+		<button id="start_button" onclick="start()">Start</button>
+		<img src="src/img/earth.png">
+		<div class="input_menu" id="menu_screen">
+			<img src="src/img/settings.png" class="image_settings">
+			<h2>coordinates :</h2>
+			<input type="text" placeholder="latitude, longitude" id="coords_inp">
+			<p>or</p>
+			<button onclick="getUserCoordinates()">Locate me</button>
+			<button onclick="confirmSettings()">confirm</button>
+		</div>
+		<iframe src="" id="output_iframe"></iframe> 
+		<img src="src/img/otherside.png" class="image_bottom" id="image_bottom">
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+<!-- <a href="https://www.textstudio.fr/">Générateur de logo</a> -->

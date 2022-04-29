@@ -1,0 +1,169 @@
+@font-face {
+	font-family: "boldfinger";
+	src: url("src/fonts/Boldfinger.ttf");
+}
+
+* {
+	overflow: hidden;
+}
+
+h1 {
+	font-family: "eotg";
+}
+
+body {
+	background-image: url("src/img/space.jpg");
+	background-size: contain;
+}
+
+.image_title {
+	width: 75vh;
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	transform: translate(-50%);
+}
+
+.image_settings {
+	width: 40vh;
+}
+
+#earth {
+	position: relative;
+	margin: 55vh 0px 55vh 0px;
+}
+
+#earth > img:nth-of-type(1) {
+	width: 100%;
+	position: relative;
+	user-select: none;
+}
+
+#start_button {
+	position: absolute;
+	top: 3.9%;
+	width: 250px;
+	height: 100px;
+	font-family: "boldfinger";
+	font-size: 3em;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 1000;
+	background-color: #006296;
+	color: white;
+	border-radius: 50px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.50s, padding 0.50s;
+}
+
+#start_button:hover {
+	background-color: #004366;	
+	padding-right: 40px;
+}
+
+#start_button:hover:after {
+	opacity: 1;
+	right: 20px;
+}
+
+#start_button:after {
+	content: ">";
+	font-family: "boldfinger";
+	position: absolute;
+	right: -30px;
+	transition: 0.50s;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.background_earth {
+	width:  50%;
+	filter: blur(35px);
+	position: absolute;
+	left: 50%;
+	top:  50%;
+	transform: translate(-50%, -50%);
+	user-select: none;
+}
+
+.input_menu {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #006296;
+	border-radius: 20px;
+	padding-bottom: 20px;
+}
+
+.input_menu > h2 {
+	font-family: "boldfinger";
+	color: white;
+	padding-left: 20px;
+	margin: 0;
+}
+
+.input_menu > input {
+	width: calc(100% - 40px);
+	border: none;
+	font-family: "boldfinger";
+	box-sizing: border-box;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.input_menu > p {
+	text-align: center;
+	font-family: "boldfinger";
+	font-size: 1em;
+	color: #ffa200;
+}
+
+.input_menu > button:nth-of-type(1) {
+	width: calc(100% - 40px);
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: "boldfinger";
+	font-size: 1.25em;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 10px;
+	color: white;
+	background-color: #00a4ff;
+}
+
+.input_menu > button:nth-of-type(2) {
+	width: calc(100% - 40px);
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: "boldfinger";
+	font-size: 1.25em;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 10px;
+	color: white;
+	background-color: #ffa200;
+	margin-top: 20px;
+}
+
+.image_bottom {
+	width: 50vh;
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	transform: translate(-50%);
+}
+
+iframe {
+	position: absolute;
+	left: 50%;
+	top:  75%;
+	transform: translate(-50%);
+	width: 60vh;
+	height: 50vh;
+}
