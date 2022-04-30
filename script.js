@@ -28,12 +28,12 @@ function start() {
 }
 
 function confirmSettings() {
-	image_bottom.scrollIntoView({block: "end", behavior: "smooth"});
 	let coordinates = coords_inp.value;
 	const [lat, long] = coordinates.split(", ");
 	const [oppLat, oppLong] = getOppositeCoords(lat, long);
 	const url = "https://maps.google.com/maps?q=" + oppLat + ", " + oppLong + "&t=k&z=5&output=embed";
 	output_iframe.src = url;
+	image_bottom.scrollIntoView({block: "end", behavior: "smooth"});
 }
 
 window.addEventListener('unload', function(e){
