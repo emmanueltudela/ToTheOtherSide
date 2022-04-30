@@ -33,7 +33,10 @@ function confirmSettings() {
 	const [oppLat, oppLong] = getOppositeCoords(lat, long);
 	const url = "https://maps.google.com/maps?q=" + oppLat + ", " + oppLong + "&t=k&z=5&output=embed";
 	output_iframe.src = url;
-	image_bottom.scrollIntoView({block: "end", behavior: "smooth"});
+	// Let map time to load
+	setTimeout(() => {
+		image_bottom.scrollIntoView({block: "end", behavior: "smooth"});
+	}, 1500)
 }
 
 window.addEventListener('unload', function(e){
