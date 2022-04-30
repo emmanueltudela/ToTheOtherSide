@@ -166,6 +166,7 @@ body {
 }
 
 iframe {
+	box-sizing: border-box;
 	max-width: 60vh;
 	position: absolute;
 	left: 50%;
