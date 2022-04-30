@@ -174,7 +174,8 @@ iframe {
 	top:  75%;
 	transform: translate(-50%);
 	width: 100%;
-	margin-left: 10px;
-	margin-right: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	height: 50vh;
+	border: none;
 }
