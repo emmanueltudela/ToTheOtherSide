@@ -14,10 +14,12 @@ h1 {
 body {
 	background-image: url("src/img/space.jpg");
 	background-size: contain;
+	margin: 0;
 }
 
 .image_title {
-	width: 75vh;
+	width: 100%;
+	max-width: 75vh;
 	position: absolute;
 	left: 50%;
 	top: 30%;
@@ -34,8 +36,11 @@ body {
 }
 
 #earth > img:nth-of-type(1) {
+	min-width: 1300px;
 	width: 100%;
 	position: relative;
+	left: 50%;
+	transform: translate(-50%);
 	user-select: none;
 }
 
@@ -152,7 +157,8 @@ body {
 }
 
 .image_bottom {
-	width: 50vh;
+	max-width: 50vh;
+	width: 100%;
 	position: absolute;
 	left: 50%;
 	top: 100%;
@@ -160,10 +166,13 @@ body {
 }
 
 iframe {
+	max-width: 60vh;
 	position: absolute;
 	left: 50%;
 	top:  75%;
 	transform: translate(-50%);
-	width: 60vh;
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
 	height: 50vh;
 }
